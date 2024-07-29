@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './ArnavSaoNavbar';
+import heroSectionBackground from '../assets/heroSectionBackground.png'; // Adjust the path as necessary
 
 const ArnavSaoHeroSection = () => {
   return (
@@ -14,7 +15,7 @@ const ArnavSaoHeroSection = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('/src/assets/heroSectionBackground.png')`, // Adjust path to your image
+            backgroundImage: `url(${heroSectionBackground})`, // Fixed path for background image
           }}
         >
           <div className="absolute inset-0 bg-white opacity-0"></div> {/* Adjusted opacity for better contrast */}

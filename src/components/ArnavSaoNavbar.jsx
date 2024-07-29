@@ -9,11 +9,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white px-5 py-3 mx-10 mt-3">
+    <nav className="bg-white px-5 py-3 mx-10 mt-3 ml:">
       <div className="max-w-8xl mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <img src={GrapplTechLogo} alt="Your Logo" className="h-8 w-auto" />
-          <span className="text-black text-lg font-bold ml-2">GrapplTech</span>
+          <span className="text-black text-lg font-bold ml-2 md:ml-4"> {/* Adjusted margin for mobile and larger screens */}
+            GrapplTech
+          </span>
         </div>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-black focus:outline-none">
@@ -52,7 +54,7 @@ const Navbar = () => {
       <div className={`md:hidden ${isOpen ? 'block bg-white' : 'hidden'} w-full`}>
         <div className="flex flex-col space-y-4 p-4">
           <a href="#" className="text-black hover:text-sky-700">Home</a>
-          <a href="#" className="text-black hover:text-sky-700">About</a>
+          <a href="#about" className="text-black hover:text-sky-700">About</a>
           <a href="#" className="text-black hover:text-sky-700">Services</a>
           <a href="#" className="text-black hover:text-sky-700">Contact</a>
         </div>
